@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "cpt-to-soiltype"
 version = "0.1.0"
-description = "CPT to SoiltType prediction"
-authors = ["Romain Arnould <treslongtemps@yahoo.fr>"]
+description = "CPT to soiltype prediction"
+authors = ["tfh <tom.frode.hansen@ngi.no>"]
 license = "MIT"
 readme = "README.md"
 packages = [
@@ -10,8 +10,15 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
 pandas = "^2.2.3"
+scikit-learn = "^1.5.2"
+matplotlib = "^3.9.2"
+ipykernel = "^6.29.5"
+ydata-profiling = "^4.12.0"
+rich = "^13.9.4"
+pyod = "^2.0.2"
+setuptools = "^75.3.0"
 
 
 [build-system]
